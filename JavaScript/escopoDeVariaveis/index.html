@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de variáveis</title>
+</head>
+<body>
+      <h1>Escopo de Variáveis</h1>
+    
+    <script>
+        // Escopo de variáveis
+        
+        function somar(n1,n2){
+            var valor = 5; // Variavel local(Só é reconhecida dentro do bloco da função)
+            return valor+n1+n2;
+        }
+
+        for(var i = 0; i<5 ; i++){
+            var outra = 5 //variável global;
+            console.log(i*outra);
+        }
+
+        console.log(somar(4,6));
+
+        // console.log(valor); //não podemos acessar, pois é uma variável local;
+
+        console.log(outra); //Temos acesso, pois foi declarada em um bloco for (variável global);
+        
+        for(var j =0 ; j<5 ; j++){
+            let uma = 12;
+            console.log(j*uma);
+        }
+
+        // console.log(uma); // Não teremos acesso, pois essa variável funciona apenas até o final da execução do for;
+        console.log(j);
+    </script>
+</body>
+</html>
