@@ -1,3 +1,5 @@
+//FOR EACH NÃO GERA UM NOVO ARRAY, JÁ O .MAP SIM!
+
 var cursos = [
     'Programação para Leigos',
     'Algoritmos e lógica de Programação',
