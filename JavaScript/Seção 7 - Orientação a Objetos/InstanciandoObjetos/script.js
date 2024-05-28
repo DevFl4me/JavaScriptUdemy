@@ -72,7 +72,7 @@ curso["qtd_alunos"] = 999;
 // delete curso. qtd_alunos;
 
 
-// INSTANCIAÇÃO DE OBJETOS - FORMA 2
+// INSTANCIAÇÃO DE OBJETOS - FORMA 2 Literal
 const programa = {
     nome:"Photoshop",
     preco:999.99,
@@ -93,5 +93,52 @@ const programa = {
 // console.log(programa);
 
 console.log(programa.nome);//Photoshop
-console.log(programa.fabricante.contato);//contact@adobe.com
-console.log(programa.fabricante.filiais)//
+// console.log(programa.fabricante.contato); contact@adobe.com
+// console.log(programa.fabricante.filiais)
+
+// programa.nome = "Playstation OS"
+
+// console.log(programa.nome);
+
+// delete programa.fabricante.filiais; // deletando array Filiais
+
+// console.log(programa.fabricante.filiais) //undefined;
+// console.log(programa.fabricante.filiais.length) // Type Error
+
+// INSTANCIAÇÃO DE OBJETOS - FORMA 3 Literal
+
+// const pessoa = {}
+
+// //console.log(typeof(pessoa))
+
+// pessoa.nome = "Angelina";
+
+// console.log(pessoa)
+
+
+// INSTANCIAÇÃO DE OBJETOS - FORMA 4 Função construtora
+
+// function lampada(cor){
+//     this.cor = cor;
+// }
+
+// const l1 = new lampada("Branca");
+
+// console.log(l1)
+// console.log(typeof(l1))
+
+
+// INSTANCIAÇÃO DE OBJETOS - FORMA 4 APARTIR DAS CLASSES
+const p1 = new Pessoa("Fl4mier","Killer");
+
+console.log(p1);
+console.log(typeof(p1));
+console.log(p1.nome); // Função GET
+console.log(p1.sobrenome);// Função GET
+
+p1.nome = "Jõao";
+console.log(p1.nome)
+
+p1.falar("Vem aqui gostosinho...");
+p1.comer();
+p1.beber();
