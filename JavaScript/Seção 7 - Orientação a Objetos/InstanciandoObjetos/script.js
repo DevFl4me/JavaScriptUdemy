@@ -139,6 +139,6 @@ console.log(p1.sobrenome);// Função GET
 p1.nome = "Jõao";
 console.log(p1.nome)
 
-p1.falar("Vem aqui gostosinho...");
+p1.falar("Vem aqui baixinho...");
 p1.comer();
 p1.beber();
