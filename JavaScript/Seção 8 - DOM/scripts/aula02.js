@@ -19,4 +19,6 @@ let a = document.querySelector('.link');
 
 // console.log(a.parentNode.parentNode.firstChild.nextSibling.firstChild.nextSibling);
 
-console.log(a.parentNode.parentNode.firstChild.nextSibling.previousSibling);
+// console.log(a.parentNode.parentNode.firstChild.nextSibling.previousSibling);
+
+console.log(a.parentNode.parentNode.firstChild.nextSibling.nextSibling)

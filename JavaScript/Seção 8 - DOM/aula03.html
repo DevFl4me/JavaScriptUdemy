@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body{
+            transition: 0.8s;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mudarCor()">Muda cor</button>
+    <button onclick="mostrarAlerta()">Por favor, clique-me!</button>
+    <br><br>
+    <span class="info" onmouseover="mudarTexto(this)"><b>Atenção</b>Não clique no botão acima</span>
+
+    <br><br>
+    <input onkeyup="escreveTexto(this)">
+
+    <br><br>
+    <span id="texto"></span>
+    
+    <script src="scripts/aula03.js"></script>
+</body>
+</html>
